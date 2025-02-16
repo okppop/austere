@@ -29,7 +29,8 @@ func NewDecoderWithBufferSize(r io.Reader, size int) *Decoder {
 	}
 }
 
-// Decode
+// ReadAndDecode read from d.r and decode message,
+// for each call, returns only one message
 func (d *Decoder) ReadAndDecode() ([]byte, error) {
 	if d.r == nil {
 		return nil, errors.New("Decoder has invalid reader r")

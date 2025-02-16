@@ -1,6 +1,6 @@
 # austere
 
-austere is a mini TCP Application layer protocol,only have a body length field in protocol header.
+austere is a mini TCP Application layer protocol, only have a body length field in protocol header.
 
 This package aims to solve TCP sticky packet. But it's not production ready since it don't have any data verification means.
 

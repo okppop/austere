@@ -14,7 +14,7 @@ The checksum field in TCP header may not guarantee data integrity in all scenari
 
 ```go
 func main() {
-    s1 := "test data1"
+	s1 := "test data1"
 	s2 := "test data2"
 	encoder := austere.NewEncoderWithBuffer(os.Stdout)
 
